@@ -1,5 +1,7 @@
 # @jamsql/mcp
 
+[![jamsql/mcp MCP server](https://glama.ai/mcp/servers/jamsql/mcp/badges/score.svg)](https://glama.ai/mcp/servers/jamsql/mcp)
+
 Connects stdio MCP clients (Claude Desktop, Cursor, VS Code, and any client you configure with `npx`) to the local MCP server inside the [Jam SQL Studio](https://jamsql.com/) desktop app. Your AI tool can then list your saved connections and query SQL Server, PostgreSQL, MySQL/MariaDB, Oracle and SQLite under the permission level you set in the app.
 
 The package forwards MCP messages between the client's stdin/stdout and the app's `http://127.0.0.1:<port>/mcp` endpoint. It finds the endpoint and the token on its own, the same way the `jam-sql` CLI does, so the client configuration contains no port and no token.
